@@ -1,0 +1,130 @@
+body{
+    background-color:darkcyan; 
+   }
+   li{
+       font-size: 20px;
+       line-height: 40px;
+   }
+   .card1{
+    background: rgb(231, 230, 230);
+    box-shadow:2px 2px 2px 2px lightgrey;
+    border-radius: 20px;
+    margin:0% 10% 0 0% ;
+       width:25%;
+     height: 40%;
+     position:relative;
+     word-wrap: break-word;
+}
+img{
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding:5px;
+}
+.resume{
+    background-color:lightcyan;
+    box-shadow: 4px 4px 4px 4px; 
+    width:50%;
+     border:1px solid lightgray;
+     /* margin:0% 10%; */
+     padding:20px;
+}
+.card{
+   display: flex;
+   margin:5% 10%;
+   padding:5%;
+   background-color:lightblue;
+   border-radius:20px;
+}
+.links{
+    margin:10% 0%;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+body
+{
+  
+     word-wrap: break-word;
+      background-color:rgb(9, 9, 54); 
+}
+.card{
+    display: inline-block;
+    background-color: #E0F9F6 ;
+}
+.card1{
+    background: rgb(231, 230, 230);
+    box-shadow:2px 2px 2px 2px lightgrey;
+    border-radius: 20px;
+      margin:5% 0% 5% 0%;
+       width:96%;
+     /* height: 40%; */
+     word-wrap: break-word;
+     padding-bottom:20px;
+}
+.resume{
+    background-color:lightcyan;
+    box-shadow: 4px 4px 4px 4px; 
+    width:85%;
+
+}
+.img1{
+    width: 100px;
+    height:130px;
+}
+/* .links{
+    margin:10% 0% 10% 20%;
+} */
+.cardimg{
+    width:150px;
+}
+}
+@media screen and (min-width:481px) and (max-width:680px){
+    body
+    {
+      
+         word-wrap: break-word;
+          background-color:#032128  ; 
+    }
+    .card{
+        display: inline-block;
+        background-color: #E0F9F6 ;
+    }
+    
+    .card1{
+        background: rgb(231, 230, 230);
+        box-shadow:2px 2px 2px 2px lightgrey;
+        border-radius: 20px;
+          margin:5% 5% 5% 0%;
+           width:96%;
+         /* height: 40%; */
+         word-wrap: break-word;
+         padding-bottom:20px;
+    }
+    .resume{
+        background-color:lightcyan;
+        box-shadow: 4px 4px 4px 4px; 
+        width:85%;
+    }
+    .img1{
+        width: 120px;
+        height:140px;
+    }
+    /* links{
+        margin:10% 0% 10% 10%;
+       
+    } */
+    button{
+        padding:15px;
+    }
+    .cardimg{
+        width:200px;
+    }
+    }
+    @media screen and (min-width:681px) and (max-width:1077px){
+        .cardimg{
+            width:100px;
+
+        }
+    }
