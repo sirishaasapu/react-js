@@ -12,7 +12,7 @@ body{
     margin:0% 10% 0 0% ;
        width:25%;
      height: 40%;
-     position:relative;
+     /* position:relative; */
      word-wrap: break-word;
 }
 img{
@@ -42,6 +42,8 @@ button{
 .links{
     margin:10% 0%;
 }
+
+/* mobile view    */
 @media screen and (min-width:320px) and (max-width:480px){
 body
 {
@@ -58,7 +60,7 @@ body
     box-shadow:2px 2px 2px 2px lightgrey;
     border-radius: 20px;
       margin:5% 0% 5% 0%;
-       width:96%;
+       width:99%;
      /* height: 40%; */
      word-wrap: break-word;
      padding-bottom:20px;
@@ -79,25 +81,29 @@ body
 .cardimg{
     width:150px;
 }
+button{
+    font-size:18px;
 }
-@media screen and (min-width:481px) and (max-width:680px){
+}
+/*tablet view**/
+@media screen and (min-width:481px) and (max-width:600px){
     body
     {
       
          word-wrap: break-word;
-          background-color:#032128  ; 
+          background-color:lavender ; 
     }
     .card{
         display: inline-block;
-        background-color: #E0F9F6 ;
+        background-color: rgb(10, 36, 10);
     }
     
     .card1{
         background: rgb(231, 230, 230);
         box-shadow:2px 2px 2px 2px lightgrey;
         border-radius: 20px;
-          margin:5% 5% 5% 0%;
-           width:96%;
+          margin:5% 5% 10% 0%;
+           width:99%;
          /* height: 40%; */
          word-wrap: break-word;
          padding-bottom:20px;
@@ -105,7 +111,7 @@ body
     .resume{
         background-color:lightcyan;
         box-shadow: 4px 4px 4px 4px; 
-        width:85%;
+        width:91%;
     }
     .img1{
         width: 120px;
@@ -115,16 +121,97 @@ body
         margin:10% 0% 10% 10%;
        
     } */
+    li{
+        font-size:20px;
+        line-height: 40px;
+    }
     button{
-        padding:15px;
+        padding:12px 9px;
+        font-size:18px;
     }
     .cardimg{
-        width:200px;
+        width:60%;
+        height: 30%;
     }
     }
-    @media screen and (min-width:681px) and (max-width:1077px){
-        .cardimg{
-            width:100px;
-
+    @media screen and (min-width:601px) and (max-width:781px){
+        body
+        {
+          
+             word-wrap: break-word;
+              background-color:lavender ; 
+              font-size: 25px;
         }
+        .card{
+            display: inline-block;
+            background-color: rgb(10, 36, 10) ;
+        }
+        
+        .card1{
+            background: rgb(231, 230, 230);
+            box-shadow:2px 2px 2px 2px lightgrey;
+            border-radius: 20px;
+              margin:5% 5% 10% 0%;
+               width:99%;
+             /* height: 40%; */
+             word-wrap: break-word;
+             padding-bottom:20px;
+        }
+        .resume{
+            background-color:lightcyan;
+            box-shadow: 4px 4px 4px 4px; 
+            width:91%;
+        }
+        .img1{
+            width: 120px;
+            height:150px;
+        }
+        /* links{
+            margin:10% 0% 10% 10%;
+           
+        } */
+        li{
+            font-size:25px;
+            line-height: 40px;
+        }
+        button{
+            padding:15px 10px;
+            font-size:20px;
+            margin:1%;
+        }
+        .cardimg{
+            width:60%;
+            height:270px;
+        }
+        }
+      
+    
+    @media screen and (min-width:781px) and (max-width:1077px){
+        body{
+            background-color:rgb(6, 6, 53)
+        }
+        .card{
+            display:flex;
+            flex-direction: row-reverse;
+            box-align: center;
+            background-color:rgb(210, 205, 230); 
+            margin-left:5%;
+          
+        }
+       .card1{
+         width:70%;
+            background: rgb(231, 230, 230);
+            box-shadow:2px 2px 2px 2px lightgrey;
+            border-radius: 20px;
+            margin:0% 0% 0 5% ;
+             height: 40%;
+             /* position:relative; */
+             word-wrap: break-word;
+        }
+         
+       .resume{
+        word-wrap:break-word;
+        width:80%;
+ 
+       }
     }
