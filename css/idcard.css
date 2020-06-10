@@ -4,7 +4,7 @@ button{
 }
 .idcard{
     display:flex;
-    margin:5%;
+    margin:4% 5%;
     padding:5%;
     background-color:lightblue;
     border-radius:20px;
@@ -21,7 +21,7 @@ body{
     box-shadow:2px 2px 2px 2px lightgrey;
     border-radius: 20px;
     /* justify-content:flex-start; */
-   margin:5%;
+   margin:2% 5%;
     Width:25%;
 }
 img{
@@ -75,6 +75,7 @@ button{
     }
     button{
         padding:4%;
+        font-size: 90%;
     }
     img{
         width:200px;
@@ -83,5 +84,4 @@ button{
 @media screen and (min-width:681px) and (max-width:1077px){
     img{
         width:100px;
-
     }}
