@@ -7,17 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-        <div id="demo"></div>
+        <div id="demo">
+            <ul>
+                <li id="l1"></li>
+                <li id="l2"></li>
+                <li  id="l3"></li>
+            </ul>
+        </div>
     <script>
       
         // Storing data:
-myObj = `{
+myObj = {
     "students":[
         {
-            "stuid":"501",
-            "stuname":"sirisha",
-            "course":"B.tech",
-            "branch":"cse"
+            "stuid1":"501",
+            "stuname1":"sirisha",
+            "course1":"B.tech",
+            "branch1":"cse"
         },
         {
             "stuid":"502",
@@ -50,15 +56,17 @@ myObj = `{
             "branch":"cse"
         }
     ]
-}`
+};
 myJSON = JSON.stringify(myObj);
 localStorage.setItem("testJSON", myJSON);
 
 // Retrieving data:
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
-// document.getElementById("demo").innerHTML = obj[0].stuid;
-//  console.log(obj.students[stuid]);
+ document.getElementById("l1").innerHTML = "STUDENT ID:"+obj.students[0].stuid1;
+ document.getElementById("l2").innerHTML = "STUDENT NAME:"+obj.students[0].stuname1;
+ document.getElementById("l3").innerHTML = "STUDENT ID:"+obj.students[0].course1;
+  console.log(obj.students[0].stuid1);
 // fun();
 // function fun(){
 // for(i=0;i<obj.json;i++){
@@ -66,7 +74,7 @@ obj = JSON.parse(text);
 //     //  document.getElementById("l2").innerHTML = obj.name;
 //     //  document.getElementById("l3").innerHTML = obj.name;
 // }}
-document.getElementById("demo").innerHTML =obj;
+// document.getElementById("demo").innerHTML =obj;
         </script>
 </body>
 </html>
