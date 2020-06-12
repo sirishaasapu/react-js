@@ -7,44 +7,49 @@
     <title>SENDING JSON TO SERVER</title>
 </head>
 <body>
+    <div id="demo"></div>
         <script>
-            var emp=`{
+            var emp={
     "employee":[
         {
-            "empid":"501",
-            "empname":"sirisha"
+            "empid1":"501",
+            "empname1":"sirisha"
            
         },
         {
-            "empid":"502",
-            "empname":"shivangi"
+            "empid2":"502",
+            "empname3":"shivangi"
            
         },
         {
-            "empid":"503",
-            "empname":"mohsin"
+            "empid4":"503",
+            "empname4":"mohsin"
         },
         {
-            "empid":"504",
-            "empname":"mohena"
+            "empid5":"504",
+            "empname5":"mohena"
           
         },
         {
-            "empid":"505",
-            "empname":"Rishi"
+            "empid6":"505",
+            "empname6":"Rishi"
             
         },
         {
-            "empid":"506",
-            "empname":"Gauvrav"
+            "empid7":"506",
+            "empname7":"Gauvrav"
         }
     ]
-    }`;
+    };
             var emps=JSON.stringify(emp);
             console.log(emps);
             var data1=JSON.parse(emps);
-            console.log(data1);
+            document.getElementById("demo").innerHTML="hello from "+data1.employee[0].empname1;
+            console.log(data1.employee[0].empid1);
+
+
             // console.log(emp);
+           
         </script>
 </body>
 </html>
