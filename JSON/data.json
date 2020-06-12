@@ -1,0 +1,29 @@
+{
+    "voters":[
+        {   
+            "voterId":"301",
+            "name":"xyz",
+            "village":"Amp"
+        },
+        {   
+            "voterId":"302",
+            "name":"pqr",
+            "village":"Amp"
+        },
+        {   
+            "voterId":"303",
+            "name":"mnl",
+            "village":"Amp"
+        },
+        {   
+            "voterId":"304",
+            "name":"zxy",
+            "village":"Amp"
+        },
+        {   
+            "voterId":"305",
+            "name":"xyz1",
+            "village":"Amp"
+        }
+    ]
+}
