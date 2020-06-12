@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="demo"></div>
+    <script>
+      
+        // Storing data:
+myObj = `{
+    "students":[
+        {
+            "stuid":"501",
+            "stuname":"sirisha",
+            "course":"B.tech",
+            "branch":"cse"
+        },
+        {
+            "stuid":"502",
+            "stuname":"shivangi",
+            "course":"B.tech",
+            "branch":"cse"
+        },
+        {
+            "stuid":"503",
+            "stuname":"mohsin",
+            "course":"B.tech",
+            "branch":"cse"
+        },
+        {
+            "stuid":"504",
+            "stuname":"mohena",
+            "course":"B.tech",
+            "branch":"cse"
+        },
+        {
+            "stuid":"505",
+            "stuname":"Rishi",
+            "course":"B.tech",
+            "branch":"cse"
+        },
+        {
+            "stuid":"506",
+            "stuname":"Gauvrav",
+            "course":"B.tech",
+            "branch":"cse"
+        }
+    ]
+}`
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+// document.getElementById("demo").innerHTML = obj[0].stuid;
+//  console.log(obj.students[stuid]);
+// fun();
+// function fun(){
+// for(i=0;i<obj.json;i++){
+//      document.getElementById("l1").innerHTML = obj.students[i];
+//     //  document.getElementById("l2").innerHTML = obj.name;
+//     //  document.getElementById("l3").innerHTML = obj.name;
+// }}
+document.getElementById("demo").innerHTML =obj;
+        </script>
+</body>
+</html>
