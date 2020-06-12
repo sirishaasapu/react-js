@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SENDING JSON TO SERVER</title>
+</head>
+<body>
+        <script>
+            var emp=`{
+    "employee":[
+        {
+            "empid":"501",
+            "empname":"sirisha"
+           
+        },
+        {
+            "empid":"502",
+            "empname":"shivangi"
+           
+        },
+        {
+            "empid":"503",
+            "empname":"mohsin"
+        },
+        {
+            "empid":"504",
+            "empname":"mohena"
+          
+        },
+        {
+            "empid":"505",
+            "empname":"Rishi"
+            
+        },
+        {
+            "empid":"506",
+            "empname":"Gauvrav"
+        }
+    ]
+    }`;
+            var emps=JSON.stringify(emp);
+            console.log(emps);
+            var data1=JSON.parse(emps);
+            console.log(data1);
+            // console.log(emp);
+        </script>
+</body>
+</html>
