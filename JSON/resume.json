@@ -1,0 +1,14 @@
+{
+    "resumedata":
+       {
+        "name":"Sirisha Asapu",
+        "city":"Hyderbad",
+        "email":"sirisha@gmail.com",
+        "mobile":"578958905"
+       },
+       "web":[
+           "html","css","bootstrap","angular"
+       ],
+       "lang":["Basics of c","java","javascript"],
+       "hobbies":["Drawing","playing Shuttle"]
+}
