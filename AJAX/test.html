@@ -35,12 +35,14 @@
         function clickme()
         {
             var xmp=new XMLHttpRequest();
+            xmp.overrideMimeType('application/json');
             xmp.onreadystatechange=function(){
                 if(this.readyState==4 &&this.status==200 ){
               var voter=JSON.parse(this.responseText);
-             document.getElementById("ready").innerHTML="student Id:"+voter.voters[0].voterId+"<br>"+"student Name:"+voter.voters[0].name+
+             document.querySelector("#ready").innerHTML="student Id:"+voter.voters[0].voterId+"<br>"+"student Name:"+voter.voters[0].name+
              "<br>"+"student Id:"+voter.voters[1].voterId+"<br>"+"student Name:"+voter.voters[1].name;
             console.log(voter.voters[0].voterId);
+            console.log(voter);
             
                 }
             };
