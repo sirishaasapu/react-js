@@ -79,7 +79,17 @@ console.log(obj.Details());
 
 
 //spread operator
-
 var arr1=[1,4,6,7];
 var arr2=[3,6,44,...arr1];
 console.log(arr2);
+
+//rest operator
+let add=(a,...args)=>{
+    let result=0;
+    for(i of args)
+    {
+           result+=i;      
+    }
+    console.log(result);
+}
+add(1,3,4,5);
