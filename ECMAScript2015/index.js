@@ -76,4 +76,10 @@ obj=new student();
 console.log(obj);
 console.log(obj.Details());
 
-//
+
+
+//spread operator
+
+var arr1=[1,4,6,7];
+var arr2=[3,6,44,...arr1];
+console.log(arr2);
