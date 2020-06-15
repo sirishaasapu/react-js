@@ -35,3 +35,13 @@ function divisible(value,index,arr){
     return value%2==0;
 }
 console.log(divisibleByTwo);
+
+//filter 
+
+var array=[1,3,5,52,53,222,43,23];
+var divisibleByThree=array.filter(divisible);
+
+function divisible(value,index,arr){
+    return value%3==0;
+}
+document.write("Divisible By 3 : "+divisibleByThree);
