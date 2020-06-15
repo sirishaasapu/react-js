@@ -26,3 +26,12 @@ arr1.map(function(i){
 arr1.map(function(i,index){
     console.log(index);
 })
+
+//find
+var array=[1,3,5,52,53,222,43,23];
+var divisibleByTwo=array.find(divisible);
+
+function divisible(value,index,arr){
+    return value%2==0;
+}
+console.log(divisibleByTwo);
