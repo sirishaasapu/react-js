@@ -28,11 +28,11 @@ arr1.map(function(i,index){
 })
 
 //find
-var array=[1,3,5,52,53,222,43,23];
-var divisibleByTwo=array.find(divisible);
+var arra=[25,65,53,43,23,222,3];
+var divisibleByTwo=arra.find(divisible);
 
-function divisible(value,index,arr){
-    return value%2==0;
+function divisible(value,index,array){
+    return value%5==0
 }
 console.log(divisibleByTwo);
 
@@ -45,3 +45,12 @@ function divisible(value,index,arr){
     return value%3==0;
 }
 document.write("Divisible By 3 : "+divisibleByThree);
+ 
+//findIndex
+// var arra=[25,53,222,43,23];
+var divisibleByTwo=arra.findIndex(divisible);
+
+function divisible(value,index,array){
+    return value%2==0;
+}
+console.log(divisibleByTwo);
