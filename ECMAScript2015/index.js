@@ -54,3 +54,23 @@ function divisible(value,index,array){
     return value%2==0;
 }
 console.log(divisibleByTwo);
+
+//class and template literal
+class student{
+    constructor(name,id,course,branch){
+        this.stuname=name;
+        this.stuid=id;
+        this.stucrs=course;
+        this.stubranch=name;
+        this.Details();
+    }
+    Details(){
+        return `student name:${this.stuname}   
+student Id:${this.stuid}
+student branch:${this.stubranch}
+student Course:${this.stucrs}`;
+    }
+}
+obj=new student("sirisha",505,"B.tech","Cse");
+console.log(obj);
+console.log(obj.Details());
