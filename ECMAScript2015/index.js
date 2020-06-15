@@ -56,12 +56,13 @@ function divisible(value,index,array){
 console.log(divisibleByTwo);
 
 //class and template literal
+//default parameter's
 class student{
-    constructor(name,id,course,branch){
+    constructor(name="sirisha",id=505,course="B.tech",branch="cse"){
         this.stuname=name;
         this.stuid=id;
         this.stucrs=course;
-        this.stubranch=name;
+        this.stubranch=branch;
         this.Details();
     }
     Details(){
@@ -71,6 +72,8 @@ student branch:${this.stubranch}
 student Course:${this.stucrs}`;
     }
 }
-obj=new student("sirisha",505,"B.tech","Cse");
+obj=new student();
 console.log(obj);
 console.log(obj.Details());
+
+//
