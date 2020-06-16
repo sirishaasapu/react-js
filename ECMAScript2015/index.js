@@ -99,3 +99,23 @@ add(1,3,4,5);
 var nam=["sirisha","shivangi","durgarao","mohsin"];
 var [nameA,nameB,nameC,nameD]=nam;
 console.log("Her name is:"+nameA);
+
+//destructing object
+var object={
+    name:'shivangi',
+    age:'21'
+};
+var {name,age}=object;
+console.log("student name: "+name);
+console.log("student age: "+age);
+
+var person1={
+    name:'justin bieber'
+};
+var person2={
+    name:'krystel'
+};
+var {name:pname1}=person1;
+var {name:pname2}=person2;
+console.log("Singer : "+pname1);
+console.log(pname2);
