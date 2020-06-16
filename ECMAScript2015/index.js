@@ -93,3 +93,9 @@ let add=(a,...args)=>{
     console.log(result);
 }
 add(1,3,4,5);
+
+
+//destructing array
+var nam=["sirisha","shivangi","durgarao","mohsin"];
+var [nameA,nameB,nameC,nameD]=nam;
+console.log("Her name is:"+nameA);
