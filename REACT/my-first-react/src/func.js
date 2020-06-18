@@ -52,7 +52,7 @@ function Func(p){
                 <h3>{p.name}</h3>
             </div>
             <div>
-                <table className='table'>
+                <table className='table table-stripted table-hover table-info'>
                    <thead>
                        <tr>
                            <th>ID</th>
