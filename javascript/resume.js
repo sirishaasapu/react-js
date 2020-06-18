@@ -83,8 +83,9 @@ left.appendChild(edu);
 
 /**Table */
 var table=document.createElement("table");
+table.classList.add("tab");
 left.appendChild(table);
-
+table.cellPadding='10px';
 /**THEAD* */
 var thead=document.createElement("thead");
 table.appendChild(thead);

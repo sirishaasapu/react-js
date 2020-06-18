@@ -1,11 +1,11 @@
-/* body{
-    background-color:yellow;
+body{
+    background-color:rgb(224, 243, 248);
       
-}*/
+}
  .resume{
-  margin:0 23%;
-  padding:4%;
-  background-color:rgb(217, 241, 217);
+  margin:0 10%;
+  padding:5%;
+  background-color:rgb(251, 250, 241);
   box-shadow: 5px 5px 5px 5px;
   word-wrap: break-word;
 
@@ -23,22 +23,19 @@ li{
    font-size:21px;
    /* font-weight:bold; */
 }
-table{
+.tab{
     border:1px solid black;
     width:100%;
-    padding:20px; 
     font-size:23px;
     table-layout: fixed;
     word-wrap: break-word;
     max-width:auto;
+
 }
 thead{
   font-weight: bold;
 }
 
-table tr{
-  padding:30px;
-}
 
 .web{
     font-size:18px;
@@ -58,7 +55,7 @@ h3{
 {
     .resume{
         margin:0 5%;
-        padding:2%;
+        padding:3%;
         background-color:rgb(217, 241, 217);
         box-shadow: 5px 5px 5px 5px;
         word-wrap: break-word;
@@ -70,7 +67,7 @@ h3{
 {
     .resume{
         margin:0 5%;
-        padding:2%;
+        padding:3%;
         background-color:rgb(217, 241, 217);
         box-shadow: 5px 5px 5px 5px;
         word-wrap: break-word;
