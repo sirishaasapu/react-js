@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Data from './data/data.json'
 
 function Func(p){
     //Hook used to store data in functional component
@@ -49,6 +50,41 @@ function Func(p){
             "branch5":'React'}); }}>Change</button> */}
             <div>
                 <h3>{p.name}</h3>
+            </div>
+            <div>
+                <table className='table'>
+                   <thead>
+                       <tr>
+                           <th>ID</th>
+                           <th>name</th>
+                           <th>Email</th>
+                           <th>Branch</th>
+                       </tr>
+                       </thead> 
+                       <tbody>
+                           <tr>
+                               <td>{Data.card[0].cardId}</td>
+                               <td>{Data.card[0].cardname}</td>
+                               <td>{Data.card[0].email}</td>
+                               <td>{Data.card[0].branch}</td>
+                           </tr>
+                           <tr>
+                               <td>{Data.card[1].cardId}</td>
+                               <td>{Data.card[1].cardname}</td>
+                               <td>{Data.card[1].email}</td>
+                               <td>{Data.card[1].branch}</td>
+                           </tr>
+                           <tr>
+                               <td>{Data.card[2].cardId}</td>
+                               <td>{Data.card[2].cardname}</td>
+                               <td>{Data.card[2].email}</td>
+                               <td>{Data.card[2].branch}</td>
+                           </tr>
+
+                       </tbody>
+                   
+                </table>
+                
             </div>
         </div>
     );
