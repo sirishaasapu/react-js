@@ -124,8 +124,10 @@ class class1 extends React.Component{
                         </tr>
                     </tbody>
                 </table>
+                <h6 style={{color:'red'}}>{this.props.name}</h6>
                 <button className='btn btn-primary float-right' onClick={this.added} onDoubleClick={this.add}>More</button>
           </div>
+
         )
     }
 }
