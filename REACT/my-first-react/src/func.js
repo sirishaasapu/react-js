@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Func(){
+function Func(p){
     //Hook used to store data in functional component
     //Hook:useState -assign value to function component
     const [courses]=useState(['b.tech','M.tech','D.Ed','B.ed']);
@@ -47,6 +47,9 @@ function Func(){
             "branch3":'bootstrap',
             "branch4":'Angular',
             "branch5":'React'}); }}>Change</button> */}
+            <div>
+                <h3>{p.name}</h3>
+            </div>
         </div>
     );
 }

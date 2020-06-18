@@ -10,7 +10,7 @@ function App() {
       <div  style={{color:'white',background:'#042e15',padding:'15px'}}>
       <h2 className="container">My first React Application</h2>
       </div>
-      <Func/>
+      <Func name='Student Data'></Func>
       <Class1></Class1>
     </div>
   );
