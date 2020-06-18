@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Func from './func'
+import Class1 from './class1'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <h2 className="container">My first React Application</h2>
       </div>
       <Func/>
+      <Class1></Class1>
     </div>
   );
 }
