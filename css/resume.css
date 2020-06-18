@@ -24,6 +24,9 @@ a{
 button{
     padding:5px;
 }
+.obj{
+    font-size:20px;
+}
 .resume{
     background-color:lightcyan;
     box-shadow: 4px 4px 4px 4px; 
