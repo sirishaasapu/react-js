@@ -52,23 +52,28 @@ function Func(p){
                 <h3>{p.name}</h3>
             </div>
             <div>
+
+         
                 <table className='table table-stripted table-hover table-info'>
                    <thead>
                        <tr>
+                           <th>S.No</th>
                            <th>ID</th>
                            <th>name</th>
                            <th>Email</th>
                            <th>Branch</th>
                        </tr>
                        </thead> 
+                       {Data.card.map((value,index)=>(
                        <tbody>
                            <tr>
-                               <td>{Data.card[0].cardId}</td>
-                               <td>{Data.card[0].cardname}</td>
-                               <td>{Data.card[0].email}</td>
-                               <td>{Data.card[0].branch}</td>
+                               <td>{index}</td>
+                               <td>{value.cardId}</td>
+                               <td>{value.cardname}</td>
+                               <td>{value.email}</td>
+                               <td>{value.branch}</td>
                            </tr>
-                           <tr>
+                           {/* <tr>
                                <td>{Data.card[1].cardId}</td>
                                <td>{Data.card[1].cardname}</td>
                                <td>{Data.card[1].email}</td>
@@ -79,12 +84,12 @@ function Func(p){
                                <td>{Data.card[2].cardname}</td>
                                <td>{Data.card[2].email}</td>
                                <td>{Data.card[2].branch}</td>
-                           </tr>
+                           </tr> */}
 
-                       </tbody>
+                       </tbody>   ))}
                    
                 </table>
-                
+             
             </div>
         </div>
     );
