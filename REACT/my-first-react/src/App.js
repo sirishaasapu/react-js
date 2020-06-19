@@ -13,9 +13,9 @@ function App() {
       <div  style={{color:'white',background:'#042e15',padding:'15px'}}>
       <h2 className="container">My first React Application</h2>
       </div>
-      
-      <Card></Card>
-      
+      <div className="container">
+      <Card className=" mt-5"></Card>
+      </div>
       <Func name='Student Data'></Func>
       <Class1 name="****student details****"></Class1>
         {empdata.map((value,index)=>(
