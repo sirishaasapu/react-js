@@ -7,10 +7,10 @@ function card(){
        <div className="container mt-5">
            <div className="row">
            {Card.profiles.map((value,index)=>(
-           <div className="col-3 card m-3">
+           <div className="col-3 card m-3" style={{boxShadow:'1px 1px 1px 1px'}}>
            <div className="card-body text-center">
            <img src={value.images} alt="profilepic" style={{width:'70%'}}/>
-           {/* <img src={require('./Images/girl.jpg')}/> */}
+            {/* <img src={require('./Images/Woman.svg')}/> */}
             <h4 className="mt-2">{value.name}</h4>
             <h5 style={{color:'grey'}}>{value.Id}</h5>
             <h5>{value.role}</h5>
