@@ -2,7 +2,15 @@ import React from 'react';
 
 function Resume(){
    return (
-       <div className="row">
+    <div>
+    
+    <div  style={{color:'white',background:'#042e15',padding:'15px'}}>
+         <h2 className="container">My first React Application</h2>
+          </div>
+         <div className="container mt-5">
+      
+       
+       <div className="row justify-content-center">
             <div className="col-3 card mr-3" style={{boxShadow:'1px 1px 1px 1px',height:'20%'}}>
                  <div className="card-body text-center h-100" >
                      <img src={require('./Images/Woman.svg')} alt="profilepic" style={{width:'70%'}}/> 
@@ -87,6 +95,8 @@ function Resume(){
 
             </div>
        </div>
+       </div>
+        </div>
    )
 }
 

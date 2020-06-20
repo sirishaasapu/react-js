@@ -16,7 +16,7 @@ function App() {
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={Idcard}/>
-      <Route exact path='/resume' component={resume}/>
+      <Route exact path='/resume' component={Resume}/>
       </Switch>   
   </BrowserRouter>
   </div>
@@ -45,19 +45,19 @@ let Idcard=()=>{
 }
 
 
-let resume=()=>{
-  return (
-    <div>
+// let resume=()=>{
+//   return (
+//     <div>
     
-    <div  style={{color:'white',background:'#042e15',padding:'15px'}}>
-    <h2 className="container">My first React Application</h2>
-    </div>
-    <div className="container mt-5">
-    <Resume className=" mt-5">
-    </Resume>
-    </div>
-    </div>
-  )
-}
+//     <div  style={{color:'white',background:'#042e15',padding:'15px'}}>
+//     <h2 className="container">My first React Application</h2>
+//     </div>
+//     <div className="container mt-5">
+//     <Resume className=" mt-5">
+//     </Resume>
+//     </div>
+//     </div>
+//   )
+// }
 
 export default App;

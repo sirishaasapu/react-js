@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from './data/carded.json'
 // import Profilei from './images/woman.svg';
+import {Link}  from 'react-router-dom';
 
 function card(){    
    return(
        <div className="container mt-5">
-           <div className="row">
+           <div className="row justify-content-center">
            {Card.profiles.map((value,index)=>(
            <div className="col-3 card m-3" style={{boxShadow:'1px 1px 1px 1px'}}>
            <div className="card-body text-center">
@@ -17,7 +18,7 @@ function card(){
             <hr/>
             <h5 style={{color:'purple'}}>{value.Email}</h5>
             <h5 style={{color:'purple'}}>{value.contact}</h5>
-            <button className="btn btn-primary mt-3">view profile</button>
+            <Link to={{pathname:'/resume'}} className="btn btn-primary mt-3">view profile</Link>
            </div>
            </div>
            ))}
