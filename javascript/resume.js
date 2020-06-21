@@ -1,4 +1,60 @@
+getCardData();
 getResume();
+
+
+
+function getCardData()
+{
+     var xhr=new XMLHttpRequest();
+     xhr.onreadystatechange=function()
+     {
+         if(this.readyState==4 && this.status==200){
+             var res=JSON.parse(this.responseText);
+              console.log(res);
+              cardDetails(res);
+         }
+     };
+     xhr.open("GET","../JSON/card.json");
+     xhr.send();
+}
+
+
+function cardDetails(carddata){
+  var body=document.querySelector(".root");
+
+   var main=document.createElement("section");
+   body.appendChild(main);
+
+   var article1=document.createElement("article");
+   article1.classList.add("class","article1");
+   main.appendChild(article1);
+
+   var image=document.createElement("img");
+   image.classList.add("class","img2");
+   image.src="../HTML/images/download.jpg";
+   image.alt="profile pic";
+//    image.height="500%";
+   article1.appendChild(image);
+
+   article1.appendChild(document.createElement("hr"));
+    
+   var id=document.createElement("li");
+   id.textContent="Reg Id:"+carddata.card[0].cardId;
+   article1.appendChild(id);
+
+   var name=document.createElement("li");
+   name.textContent="Name:"+carddata.card[0].cardname;
+   article1.appendChild(name);
+
+   var email=document.createElement("li");
+   email.textContent="Email:"+carddata.card[0].email;
+   article1.appendChild(email);
+
+   var branch=document.createElement("li");
+   branch.textContent="Branch:"+carddata.card[0].branch;
+   article1.appendChild(branch);
+
+}
 
 function getResume(){
     var xmp=new XMLHttpRequest();
@@ -28,10 +84,11 @@ left.classList.add("resume");
 main.appendChild(left);
 
 /****image****** */
-var image=document.createElement("img");
-image.src="../HTML/images/download.jpg";
-image.alt="profile";
-left.appendChild(image);
+var image1=document.createElement("img");
+image1.classList.add("class","img1");
+image1.src="../HTML/images/download.jpg";
+image1.alt="profile";
+left.appendChild(image1);
 
 
 /*h3 */
