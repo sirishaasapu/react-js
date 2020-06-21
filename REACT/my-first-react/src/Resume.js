@@ -1,5 +1,6 @@
 import React from 'react';
 import data from './data/carded.json'
+import {Link}  from 'react-router-dom';
 
 let Resume=(prop)=>{
     let info=data.profiles[prop.location.data.id];
@@ -22,6 +23,7 @@ let Resume=(prop)=>{
                          <hr/>
                      <h5 style={{color:'purple'}}>{info.basics.Email}</h5>
                     <h5 style={{color:'purple'}}>{info.basics.contact}</h5>
+                    <Link to={{pathname:'/'}} type="button" className="btn btn-primary mt-3 w-auto">Back</Link>
                          </div>
                 </div>
                 <div className="col-8 card" style={{boxShadow:'1px 1px 1px 1px'}}>
